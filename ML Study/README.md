@@ -8,22 +8,22 @@
 > - Design and implement scalable, cost-optimized, reliable, and secure ML solutions.
 
 >1. Domain 1: Data Engineering
->  1. Create data repositories for machine learning.
->  2. Identify and implement a data-ingestion solution.
->  3. Identify and implement a data-transformation solution.
+>  - Create data repositories for machine learning.
+>  - Identify and implement a data-ingestion solution.
+>  - Identify and implement a data-transformation solution.
 >2. Domain 2: Exploratory Data Analysis
->  1. Sanitize and prepare data for modeling.
->  2. Perform feature engineering.
->  3. Analyze and visualize data for machine learning.
+>  - Sanitize and prepare data for modeling.
+>  - Perform feature engineering.
+>  - Analyze and visualize data for machine learning.
 >3. Domain 3: Modeling
->  1. Frame business problems as machine learning problems.
->  2. Select the appropriate model(s) for a given machine learning problem.
->  3. Train machine learning models.
->  4. Perform hyperparameter optimization.
->  5. Evaluate machine learning models.
+>  - Frame business problems as machine learning problems.
+>  - Select the appropriate model(s) for a given machine learning problem.
+>  - Train machine learning models.
+>  - Perform hyperparameter optimization.
+>  - Evaluate machine learning models.
 >4. Domain 4: Machine Learning Implementation and Operations
->  1. Build machine learning solutions for performance, availability, scalability, resiliency, and fault tolerance.
->  2. Recommend and implement the appropriate machine learning services and features for a given problem.
->  3. Apply basic AWS security practices to machine learning solutions.
->  4. Deploy and operationalize machine learning solutions.
+>  - Build machine learning solutions for performance, availability, scalability, resiliency, and fault tolerance.
+>  - Recommend and implement the appropriate machine learning services and features for a given problem.
+>  - Apply basic AWS security practices to machine learning solutions.
+>  - Deploy and operationalize machine learning solutions.
 
