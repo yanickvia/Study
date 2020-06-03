@@ -9,3 +9,7 @@
 - <h2>Sumário dos repositórios </h2>
 
     - [Estudos de Machine Learning](https://github.com/yanickvia/Study/tree/master/ML%20Study)
+
+    - [Estudos de Data Analytics](https://github.com/yanickvia/Study/tree/master/Data%20Analytics%20Study#data-analytics---aws-certificate-study-)
+
+    - [Motivacional](https://github.com/yanickvia/Study/tree/master/Motivacional#motiva%C3%A7%C3%A3o-di%C3%A1ria)

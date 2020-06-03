@@ -34,3 +34,5 @@
 >   - 5.3 Apply data governance and compliance controls
 
 ---
+
+> [Questões com respostas de exemplo - AWS] (https://d1.awsstatic.com/training-and-certification/docs-data-analytics-specialty/AWS-Certified-Data-Analytics-Specialty_Sample-Questions.pdf) 
