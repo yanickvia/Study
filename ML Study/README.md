@@ -96,3 +96,4 @@
     - Repetir esse treinamento e validação com diferentes \*divisões\* de porções
     - K-Fold Cross-Validation - K = N° de conjuntos menores que o conjunto de dados de treinamento é dividido
     - Alguns algoritmos realizam o Cross-Validation por si só
+
