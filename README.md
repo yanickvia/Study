@@ -8,4 +8,4 @@
 
 - <h2>Sumário dos repositórios </h2>
 
-    - <h3>[Estudos de Machine Learning](https://github.com/yanickvia/Study/tree/master/ML%20Study)</h3>
+    - [Estudos de Machine Learning](https://github.com/yanickvia/Study/tree/master/ML%20Study)
