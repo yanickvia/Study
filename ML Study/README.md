@@ -34,6 +34,7 @@
 >  - Apply basic AWS security practices to machine learning solutions.
 >  - Deploy and operationalize machine learning solutions.
 
+---
 
 <h2>Ciclo de Vida - Machine Learning</h2>
 
