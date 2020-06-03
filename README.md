@@ -1,8 +1,11 @@
 <h1>Study</h1>
 
->Default repositories to **work** with projects, save backups when necessary and **study a lot**
+>Repositório Git com intuito de compartilhar conteúdos em português dos estudos efetuados
 
->Here is a cool site with .md syntax to help to format a readme.md file! 
->>[Cool Site](https://www.markdownguide.org/basic-syntax/)
+>[Aqui tem um site legal sobre como formatar arquivo .md (README.md)](https://www.markdownguide.org/basic-syntax/)
 
 >![Be Happy and enjoy learning](https://d33wubrfki0l68.cloudfront.net/e7ed9fe4bafe46e275c807d63591f85f9ab246ba/e2d28/assets/images/tux.png)
+
+- <h2>Sumário dos repositórios </h2>
+
+    - [Estudos de Machine Learning](https://github.com/yanickvia/Study/tree/master/ML%20Study)
