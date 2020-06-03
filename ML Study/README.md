@@ -1,6 +1,6 @@
 <h1>Machine Learning - AWS Certificate Study </h1>
 
-#### From aws exam readness
+#### Informações retiradas do guia oficial do exame da AWS
 
 > It will validate the candidate’s ability to
 > - Select and justify the appropriate ML approach for a given business problem.
@@ -58,3 +58,41 @@
     - Utilizar como Batch (lotes) ou como um serviço
 
 - Infer: *Usar o modelo para inferir ou prever resultados*
+
+<h3> Tipos de Algoritmos </h3>
+
+- Supervisionado
+    - O modelo se alimenta de informação para inferir sobre os dados futuros
+- Não Supervisionado
+    - O modelo procura por padrões/relações nos dados e tenta prever novas ocorrêcias
+- Por recompensa
+    - Aprende baseado nas ações escolhidas/efetuadas, recebendo recompensa por acerto.
+    - Muita Tentativa e erro
+
+<h3> Otimização </h3>
+
+- Otimização
+    - Soma dos quadrados vs A inclinação da linha
+        - Linha no Gráfico 
+        - Utiliza o _**O método do gradiente** que é um método numérico usado em otimização*_
+            - Para encontrar um mínimo de uma função usa-se um esquema iterativo, onde em cada passo se toma a direção do gradiente, que corresponde à direção de declive máximo
+            - Utilizado para otimizar diferentes tipos de algoritmos de ML
+            - Possível ajustar o _Step Rate_ do método
+            - _**Minimun Slope = Best Fit**_ Ou seja, o ponto mais baixo na curva é o ponto onde o modelo melhor se ajusta
+
+- Regularização
+    - Processo matemático, utiliza **regressão**
+        - L1 (regressão Lasso)
+        - L2 (regressão Ridge)
+
+- Hiperparametro
+    - Parâmetro externo que podemos utilizar
+        - Learning Rate: Determina o tamanho do passo dado durante o método do gradiente(Gradient *Descent*)
+        - Epochs: N° de vezes que o algoritmo irá processar a base de dado de treinamento
+        - Batch Size: Divide os dados em lotes para treinar por vez; 32, 64, 128 lotes.
+
+- Validação: Cross-Validation -> influencia o Modelo
+    - Treinar com menos dados, e validar com um porção da base de treinamento
+    - Repetir esse treinamento e validação com diferentes \*divisões\* de porções
+    - K-Fold Cross-Validation - K = N° de conjuntos menores que o conjunto de dados de treinamento é dividido
+    - Alguns algoritmos realizam o Cross-Validation por si só
