@@ -76,6 +76,8 @@
 
 - Infer: *Usar o modelo para inferir ou prever resultados*
 
+---
+
 <h3> Tipos de Algoritmos </h3>
 
 - Supervisionado
@@ -85,6 +87,8 @@
 - Por recompensa
     - Aprende baseado nas ações escolhidas/efetuadas, recebendo recompensa por acerto.
     - Muita Tentativa e erro
+
+---
 
 <h3> Otimização </h3>
 
@@ -200,5 +204,45 @@
     - Amazon SageMaker funciona melhor com RecordIO
         - Streama os dados direto do S3
         - Instancias de treinos não precisam copiar os dados para o disco local
-    
 
+---    
+
+<h2>Algoritmos de Machine Learning! </h2>
+
+- Regressão logística
+    >- *A regressão logística é uma técnica estatística que tem como objetivo produzir, a partir de um conjunto de observações, um modelo que permita a predição de valores tomados por uma variável categórica, frequentemente binária, a partir de uma série de variáveis explicativas contínuas e/ou binárias*
+    - Algoritmo Supervisionado
+    - Dados um conjunto de dados, procura por padrões nesse conjunto e sabe quais os resultados finais desejados
+    - Usado para prever/inferir valores binários, label com dois possíveis resultados. Ex: Sim ou não, Azul ou verde, Homem ou mulher
+    - Utiliza Função Sigmoid
+
+- Regressão Linear
+    >- *Regressão linear é uma equação para se estimar a condicional (valor esperado) de uma variável y, dados os valores de algumas outras variáveis x*
+    - Algoritmo Supervisionado
+    - Infere/prevê Valores numéricos - 1,2,3...
+
+- Máquina de vetores de suporte (Support vector machine) SVM
+    >- *Uma máquina de vetores de suporte é um conceito na ciência da computação para um conjunto de métodos de aprendizado supervisionado que analisam os dados e reconhecem padrões, usado para classificação e análise de regressão*
+    - Algoritmo Supervisionado
+    - Infere/prevê Calssificações - grupos de consumidores, classe média ou alta...
+    - Margens entre categorias -> *hiperplano*
+        - Um novo dado será categorizado baseado na divisão das margens + hiperplano
+
+- Árvores de Decisões
+    -  Usado para uma ampla gama de situações 
+    - Algoritmos Supervisionado
+    - Infere/prevê: 
+        - Valores Binários
+        - Valores numéricos
+        - Classificações
+    - Estrutura da árvore de decisão
+        - Nó raiz (inicio)
+        - Nó interno (intermediário)
+        - Nó folha (Resultado inferido)
+    - Cada vez que o algoritmo desce em direção às folhas, ele toma uma decisão lógica baseado na condição
+    - Pode excluir alguma coluna que não tem correlação com a previsão/inferencia da Label desejada
+        - O algoritmo pode realizar uma especie de seleção de recurso no final das contas
+
+- Floresta Aleatória
+    > - Florestas aleatórias ou florestas de decisão aleatória são um método de aprendizado conjunto para classificação, regressão e outras tarefas que operam construindo uma infinidade de árvores de decisão no momento do treinamento e gerando a classe que é o modo das classes ou a previsão média das árvores individuais
+    -  
