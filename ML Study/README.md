@@ -36,7 +36,7 @@
 
 ---
 
-> [Questões com respostas de exemplo - AWS] (https://d1.awsstatic.com/training-and-certification/docs-ml/AWS-Certified-Machine-Learning-Specialty_Sample-Questions.pdf) 
+> [Questões com respostas de exemplo - AWS](https://d1.awsstatic.com/training-and-certification/docs-ml/AWS-Certified-Machine-Learning-Specialty_Sample-Questions.pdf) 
 
 ---
 
@@ -116,7 +116,7 @@
 
 ---
 
-<h3> Dados! </h3>
+<h3> Sobre os Dados! </h3>
 
 - Seleção e Engenharia de Recursos
 
@@ -163,4 +163,42 @@
                 - Ex: reduzir para 25% do total de Componentes principais total
         - PC1 e PC2 (Principal Componentes) são usados para construir um gráfico 2D para mostrar os grupos de recursos
 
-- Dados Faltantes e Não Balanceados
+- Dados Faltantes 
+    - Calcular e colocar um valor no dado faltante (colocar a média?), ou
+    - Remover o registro inteiro que o dado está faltante
+    - Se tiver muitos registros com valores faltantes, talvez seja melhor remover o recurso todo (coluna)
+
+- Dados Não Balanceados
+    - Obter mais dados
+    - Multiplicar os dados que estão insuficientes (forçar exemplos que acarretariam uma inferência correta
+    - Sintetizar os dados (aplicar algumas possíveis alterações nos dados que acarretariam a inferência correta e adicionar ao conjunto de treinamento)
+    - Tentar tipo de algoritmo diferente! 
+
+- Rotular e Uma Codificação Quente
+    - Trocar os valores tipo texto por inteiro
+        - Fazer uma representação binária do valores
+        - 4 valores diferentes de texto se tornariam 4 recursos (colunas) a mais nos dado
+    - Algoritmos de ML usam números, usar troca de valores texto por númérico
+    - Se não deveria ter uma relação entre os valores de um recurso, então usar o One Hot Encoding (representação binária)
+
+- Divisão dos dados
+    - Dados coletados durante um período
+    - Dados coletados em lotes
+    - Os dados podem ser mal divididos caso tenha uma ordem na coleta dos dados
+        - Aleatorizar os dados para misturar-los suficientemente a ponto de não ter blocos de dados semelhantes
+    - Conselho: **SEMPRE aleatorizar os dados**
+    - Dados de treino 80%
+        - dados de validação: Ver K-fold 
+    - Dados de Teste 20%
+
+- Formato do Arquivo: Record IO
+    - Todas as imagens em um unico arquivo
+        - Maior agilidade no treinamento e maior taxa de transferencia 
+    - [Pipe Mode stream data](https://aws.amazon.com/pt/blogs/machine-learning/using-pipe-input-mode-for-amazon-sagemaker-algorithms/)
+        - Seu conjunto de dados é transmitido diretamente para suas instâncias de treinamento, em vez de ser baixado primeiro
+        - Isso significa que seus trabalhos de treinamento começam mais cedo, terminam mais rapidamente e precisam de menos espaço em disco
+    - Amazon SageMaker funciona melhor com RecordIO
+        - Streama os dados direto do S3
+        - Instancias de treinos não precisam copiar os dados para o disco local
+    
+
