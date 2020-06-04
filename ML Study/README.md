@@ -36,7 +36,23 @@
 
 ---
 
-<h2>Ciclo de Vida - Machine Learning</h2>
+> [Questões com respostas de exemplo - AWS] (https://d1.awsstatic.com/training-and-certification/docs-ml/AWS-Certified-Machine-Learning-Specialty_Sample-Questions.pdf) 
+
+---
+
+<h3> Dicas de outras pesssoas</h3>
+
+-   https://www.linkedin.com/pulse/how-prep-pass-aws-machine-learning-specialty-austin-tidmore/
+
+-   https://medium.com/@javier.ramos1/aws-machine-learning-certification-exam-tips-2a7679a83e73
+
+-   https://towardsdatascience.com/five-tips-for-passing-the-aws-machine-learning-specialty-exam-a2977654d324
+
+---
+
+<h1> Inicio das anotações sobre os estudos </h1>
+
+<h2> Ciclo de Vida - Machine Learning </h2>
 
 - Processamento dos dados
     - Feature & Labels
@@ -98,3 +114,53 @@
     - K-Fold Cross-Validation - K = N° de conjuntos menores que o conjunto de dados de treinamento é dividido
     - Alguns algoritmos realizam o Cross-Validation por si só
 
+---
+
+<h3> Dados! </h3>
+
+- Seleção e Engenharia de Recursos
+
+    - Selecionar os dados relevantes para o treinamento do dado (Com cautela)
+        - Remover dados que não fazem sentido (agiliza o processamento do algoritmo)
+        - Ex: Nome da pessoa não influencia se ela gosta ou não de café
+        - Correlação dos dados: Se todos os dados são parecidos ou iguais, não influenciaria no resultado 
+        - Gaps e anomalias: Dados que não fazem sentido
+
+    - Engenharia de recurso: Altura e idade estão relacionados
+        - Dois campos são transformados em um só (menos dados para processar)
+        - Novo campo = Altura/Idadde 
+        - Se é uma boa ideia ou não, descobre testando
+
+    - Engenharia de recurso: Uma data onde o importante é apenas a hora do dia
+        - Seleciona apenas a parte das horas dessa data
+
+    - Dicas para seleção de recursos
+        - Usar o conhecimento do dominio para discartar recursos irrelevantes
+        - Discartar recursos com correlação muito pequena com o dado sendo rotulado (inferido)
+        - Discartar dado com variancia muito baixa
+        - Discartar dados com muitos valores faltantes
+
+    - Dicas para engenharia de Recursos
+        - Simplificar recursos e remover informações irrelevantes
+        - Padronizar os range dos valores dos dados entre os recursos
+        - Tranformar o dado para se adequar ao modelo/problema
+    
+
+- PCA: Análise do Componente Principal
+    - Como representar graficamente uma relação entre 5 ou mais dimensões? 
+    - Usado para procurar por relações ou componentes principais de um conjunto de dados
+    - Faz isso através de "redução de Dimensão"
+        - Numa imagem 3D, tiramos uma foto dela e perdemos uma dimensão mas ainda teremos os principais componentes da imagem.
+        - Dessa forma mantemos os componentes principais da imagem, mesmo discartando uma dimensão (dados)
+    
+    - Pontos para relembrar sobre o PCA
+        - PCA é um algoritmo/modelo de ML não supervisionado
+        - Normalmente é usado em um passo de pré-processamento dos dados
+            - Pode ser usado para achar relaões entre os dados e então usar esses dados para treinar um outro modelo
+            - Reduzindo as dimensões/dados que não fazem tanto sentido 
+        - Existem tantos Componentes Principais quanto recursos ou valores nos dados
+            - Pode-se escolher até quantos Componentes Principais os dados serão reduzidos
+                - Ex: reduzir para 25% do total de Componentes principais total
+        - PC1 e PC2 (Principal Componentes) são usados para construir um gráfico 2D para mostrar os grupos de recursos
+
+- Dados Faltantes e Não Balanceados
