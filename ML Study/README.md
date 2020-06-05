@@ -245,4 +245,89 @@
 
 - Floresta Aleatória
     > - Florestas aleatórias ou florestas de decisão aleatória são um método de aprendizado conjunto para classificação, regressão e outras tarefas que operam construindo uma infinidade de árvores de decisão no momento do treinamento e gerando a classe que é o modo das classes ou a previsão média das árvores individuais
-    -  
+    - Algoritmos Supervisionado
+    - Infere/prevê: 
+        - Valores Binários
+        - Valores numéricos
+        - Classificações
+    - seleciona aleatoriamente um numero N de features e calcula a correlação com a label analisada
+        - Faz isso para mais features
+        - Repete o procedimento várias vezes
+    - Testa os modelos de cada árvore de decisão individualmente e qual for a decião mais predominante, se torna a escolhida da floresta
+
+- K-Means
+    >- Em mineração de dados, agrupamento k-means é um método de Clustering que objetiva particionar n observações dentre k grupos onde cada observação pertence ao grupo mais próximo da média.
+    - Algoritmo Não Supervisionado
+    - Infere/prevê Classificações
+    - Usado para explorar os dados (encontrar grupos de tipos de consumidores)
+    - K - Numero de classes que queremos que o algoritmo encontre
+        - Variação total para escolher qual o modelo é mais correto (menor cariação = melhor classificação)
+        - Melhor valor para o K?
+            -  Redução na variação vs Clusters(k)
+            - Elbow Plot (cotovelo do gráfico)
+
+- K-ésimo Vizinho mais Próximo
+    >-No reconhecimento de padrões, o algoritmo k-vizinhos mais próximos é um método não paramétrico usado para classificação e regressão. Nos dois casos, a entrada consiste nos k exemplos de treinamento mais próximos no espaço de recursos. 
+    - Algoritmo Supervisionado
+    - Infere/prevê Classificações
+    - Verifica a qual classe o novo dado é mais próximo (considerando K como o número de dados que ele será aproximado)
+    - Deixar o K grande o suficiente para reduzier a influencia de ourliers
+    - Deixar o K pequeno o suficiente para que classes com poucos dados não perca a influência
+
+- Alocação latente de Dirichlet
+    >- No processamento de linguagem natural, a alocação latente de Dirichlet é um modelo estatístico generativo que permite que conjuntos de observações sejam explicados por grupos não observados que explicam por que algumas partes dos dados são semelhantes
+    - Algoritmo Não Supervisionado
+    - Infere/prevê Classificações e outros... 
+    - Usado em análise de textos, para inserir tags em documentos... 
+    - Procura por palavras para inferir os tópicos
+    - Seleciona um número K de tópicos 
+
+---
+
+<h2>Algoritmos de Deep Learning</h2>
+
+- Redes Neurais
+    >- Em ciência da computação e campos relacionados, redes neurais artificiais são modelos computacionais inspirados pelo sistema nervoso central de um animal que são capazes de realizar o aprendizado de máquina bem como o reconhecimento de padrões.
+    - Inferência = um dos neurôneos de output serndo ativados mais predominantemente
+    - Vértices são valores e as arestas são pesos. O fluxo calcula os valores dos vértices adjacentes utilizando o peso + Bias e uma função de ativação
+        - Função de ativação: Sigmoid( valore entre 0 e 1), ReLU(valores 0 se negativo e n = n se positivo) e Tanh (valores entre -1 e 1)
+        - Bias: previne que o neuronio não seja desativado
+    - Combinação de ajustes do Bias e do peso é essencialmente o aprendizado da reude neural
+    - Realiza o Fowards propagation e Back Propagation -> Ajustar os pesos para ajustar a Loss Function (função de otimização)
+        - Loss Function usa Gradient Decent e o Learning Rate
+    - Ciclo de Fowards and Back Propagation (N° de vezes = Epochs -> hyperparameter) ajustando sempre a Loss Function
+
+- Rede neural convolucional (Convolutional neural network)
+    >- No contexto de inteligência artificial e aprendizagem de máquina, uma rede neural convolucional é uma classe de rede neural artificial do tipo feed-forward, que vem sendo aplicada com sucesso no processamento e análise de imagens digitais
+    - Algoritmo supervisionado
+    - Infere/prevê Classificações
+    - Camadas convolucionais da rede (camadas internas)
+        - Camadas de entrada são responsáveis por características principais
+    
+
+- Rede neural recorrente
+    >- Uma rede neural recorrente é uma classe de redes neurais artificiais em que as conexões entre os nós formam um gráfico direcionado ao longo de uma sequência temporal. Isso permite exibir comportamento dinâmico temporal
+    - Algoritmo Supervisionado
+    - Infere/prevê reconhecimento de voz, previsão de ações, dados em séries temporais
+    - Tem uma memória que ajuda o modelo a prever as ações futuras baseado no que aconteceu
+        - O output alimenta a memória do modelo para ajudar nas próximas inferencias
+        - Rede neural recorrente consegue lembrar um pouco
+        - Long  Short-term memory consegue lembrar bastante!
+    
+---
+
+<h2> Performace dos modelos e Otimização </h2>
+
+
+
+
+
+
+
+
+
+
+<h2> Anotações e links úteis </h2>
+
+- [⭐️ Resources ⭐] (https://www.youtube.com/watch?v=9suSsTVhYuw) (Não lido ainda)
+    - Links no comentário do vídeo
