@@ -267,7 +267,7 @@
             - Elbow Plot (cotovelo do gráfico)
 
 - K-ésimo Vizinho mais Próximo
-    >-No reconhecimento de padrões, o algoritmo k-vizinhos mais próximos é um método não paramétrico usado para classificação e regressão. Nos dois casos, a entrada consiste nos k exemplos de treinamento mais próximos no espaço de recursos. 
+    >-No reconhecimento de padrões, o algoritmo k-vizinhos mais próximos é um método não paramétrico usado para classificação e regressão. Nos dois casos, a entrada consiste nos k exemplos de treinamento mais próximos no espaço de recursos
     - Algoritmo Supervisionado
     - Infere/prevê Classificações
     - Verifica a qual classe o novo dado é mais próximo (considerando K como o número de dados que ele será aproximado)
@@ -316,12 +316,24 @@
     
 ---
 
-<h2> Performace dos modelos e Otimização </h2>
+<h2> Performance dos modelos e Otimização </h2>
 
+- Confusion matrix
+    >- No campo de aprendizado de máquina e, especificamente, no problema de classificação estatística, uma matriz de confusão, também conhecida como matriz de erro, é um layout de tabela específico que permite a visualização do desempenho de um algoritmo, normalmente um aprendizado supervisionado
+    - Verdade conhecida vs Inferencia do Modelo (Quatro quadrantes quando tem 2 possíveis categorias)
+        - True positivos: ML inferiu a resposta positiva e acertou
+        - Ture negativos: ML inferiu a resposta negativa e acertou 
+        - False positivos: ML inferiu a resposta positiva e errou
+        - False negativos: ML inferiu a resposta negativa e errou
+    - Com muitas categorias, a matrix cresce bastante e apenas a diagonal i = j será os valores de acerto
+    - Testa diferentes algoritmos e monta a Confusion Matrix
+        - Decidir qual algoritmo desempenha melhor para o modelo em questão
+    - Métricas para calcular qual Algoritmo é melhor para um determinado Use Case
+        - Sensitivity and Specificity
 
-
-
-
+- Sensitivity and Specificity
+    >- São medidas estatísticas do desempenho de um teste de classificação binária, também conhecido na estatística como função de classificação
+    - 
 
 
 
@@ -329,5 +341,5 @@
 
 <h2> Anotações e links úteis </h2>
 
-- [⭐️ Resources ⭐] (https://www.youtube.com/watch?v=9suSsTVhYuw) (Não lido ainda)
+- [⭐️ Resources ⭐](https://www.youtube.com/watch?v=9suSsTVhYuw) (Não lido ainda)
     - Links no comentário do vídeo
