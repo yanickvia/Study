@@ -1,46 +1,46 @@
-<h1>Machine Learning - AWS Certificate Study </h1>
+><h1>Machine Learning - AWS Certificate Study </h1>
 
 #### Informações retiradas do guia oficial do exame da AWS
 
 > It will validate the candidate’s ability to
-> - Select and justify the appropriate ML approach for a given business problem.
-> - Identify appropriate AWS services to implement ML solutions.
-> - Design and implement scalable, cost-optimized, reliable, and secure ML solutions.
+ - Select and justify the appropriate ML approach for a given business problem.
+ - Identify appropriate AWS services to implement ML solutions.
+ - Design and implement scalable, cost-optimized, reliable, and secure ML solutions.
 
 ---
 
 #### Domains To study
 
 >1. Domain 1: Data Engineering
->  - Create data repositories for machine learning.
->  - Identify and implement a data-ingestion solution.
->  - Identify and implement a data-transformation solution.
+  - Create data repositories for machine learning.
+  - Identify and implement a data-ingestion solution.
+  - Identify and implement a data-transformation solution.
 
 >2. Domain 2: Exploratory Data Analysis
->  - Sanitize and prepare data for modeling.
->  - Perform feature engineering.
->  - Analyze and visualize data for machine learning.
+  - Sanitize and prepare data for modeling.
+  - Perform feature engineering.
+  - Analyze and visualize data for machine learning.
 
 >3. Domain 3: Modeling
->  - Frame business problems as machine learning problems.
->  - Select the appropriate model(s) for a given machine learning problem.
->  - Train machine learning models.
->  - Perform hyperparameter optimization.
->  - Evaluate machine learning models.
+  - Frame business problems as machine learning problems.
+  - Select the appropriate model(s) for a given machine learning problem.
+  - Train machine learning models.
+  - Perform hyperparameter optimization.
+  - Evaluate machine learning models.
 
 >4. Domain 4: Machine Learning Implementation and Operations
->  - Build machine learning solutions for performance, availability, scalability, resiliency, and fault tolerance.
->  - Recommend and implement the appropriate machine learning services and features for a given problem.
->  - Apply basic AWS security practices to machine learning solutions.
->  - Deploy and operationalize machine learning solutions.
+  - Build machine learning solutions for performance, availability, scalability, resiliency, and fault tolerance.
+  - Recommend and implement the appropriate machine learning services and features for a given problem.
+  - Apply basic AWS security practices to machine learning solutions.
+  - Deploy and operationalize machine learning solutions.
 
 ---
 
-> [Questões com respostas de exemplo - AWS](https://d1.awsstatic.com/training-and-certification/docs-ml/AWS-Certified-Machine-Learning-Specialty_Sample-Questions.pdf) 
+>[Questões com respostas de exemplo - AWS](https://d1.awsstatic.com/training-and-certification/docs-ml/AWS-Certified-Machine-Learning-Specialty_Sample-Questions.pdf)
 
 ---
 
-<h3> Dicas de outras pesssoas</h3>
+><h2> Dicas de outras pesssoas</h2>
 
 -   https://www.linkedin.com/pulse/how-prep-pass-aws-machine-learning-specialty-austin-tidmore/
 
@@ -50,9 +50,9 @@
 
 ---
 
-<h1> Inicio das anotações sobre os estudos </h1>
+><h1> Inicio das anotações sobre os estudos </h1>
 
-<h2> Ciclo de Vida - Machine Learning </h2>
+><h2> Ciclo de Vida - Machine Learning </h2>
 
 - Processamento dos dados
     - Feature & Labels
@@ -78,7 +78,7 @@
 
 ---
 
-<h3> Tipos de Algoritmos </h3>
+><h2> Tipos de Algoritmos </h2>
 
 - Supervisionado
     - O modelo se alimenta de informação para inferir sobre os dados futuros
@@ -90,7 +90,7 @@
 
 ---
 
-<h3> Otimização </h3>
+><h2> Otimização </h2>
 
 - Otimização
     - Soma dos quadrados vs A inclinação da linha
@@ -120,7 +120,7 @@
 
 ---
 
-<h3> Sobre os Dados! </h3>
+><h2> Sobre os Dados! </h2>
 
 - Seleção e Engenharia de Recursos
 
@@ -207,7 +207,7 @@
 
 ---    
 
-<h2>Algoritmos de Machine Learning! </h2>
+><h2>Algoritmos de Machine Learning! </h2>
 
 - Regressão logística
     >- *A regressão logística é uma técnica estatística que tem como objetivo produzir, a partir de um conjunto de observações, um modelo que permita a predição de valores tomados por uma variável categórica, frequentemente binária, a partir de uma série de variáveis explicativas contínuas e/ou binárias*
@@ -284,7 +284,7 @@
 
 ---
 
-<h2>Algoritmos de Deep Learning</h2>
+><h2>Algoritmos de Deep Learning</h2>
 
 - Redes Neurais
     >- Em ciência da computação e campos relacionados, redes neurais artificiais são modelos computacionais inspirados pelo sistema nervoso central de um animal que são capazes de realizar o aprendizado de máquina bem como o reconhecimento de padrões.
@@ -316,7 +316,7 @@
     
 ---
 
-<h2> Performance dos modelos e Otimização </h2>
+><h2> Performance dos modelos e Otimização </h2>
 
 - Confusion matrix
     >- No campo de aprendizado de máquina e, especificamente, no problema de classificação estatística, uma matriz de confusão, também conhecida como matriz de erro, é um layout de tabela específico que permite a visualização do desempenho de um algoritmo, normalmente um aprendizado supervisionado
@@ -331,9 +331,88 @@
     - Métricas para calcular qual Algoritmo é melhor para um determinado Use Case
         - Sensitivity and Specificity
 
-- Sensitivity and Specificity
+- Sensitivity e Specificity
     >- São medidas estatísticas do desempenho de um teste de classificação binária, também conhecido na estatística como função de classificação
-    - 
+    - Outra nomenclatura: True Positive Rate(TPR) e True Negative Rate(TNR) 
+    - Sensitivity
+        - Número de positivos corretos dentro dos reais positivos
+        - Formula: True Positves / (true positives + False Negatives)
+        - Ou seja, é a divisão dos acertos positivos do modelo, pela soma dos positivos conhecidos dos dados usados. (False negative = Deveria ter inferido como positivo, mas errou e inferiu negativo)
+    - Specificity
+        - Número de negativos corretos dentro dos reaais negativos
+        - Formula: True Negatives/ (True negatives + False Positives)
+        - Ou seja, é a divisão dos acertos negativos pela soma do total de negativos dos dados utilizados pelo modelo. (False positives = Inferiu como positivo erroneamente, pois o correto era ser negativo)
+    - Comparamos os valores encontrados entre diferentes algoritmos
+        - Sensitivity -> Evitar que o modelo infira erroneamente um positivo como sendo negativo!
+            - Fraude: Falso positivo é aceitável, contanto que os true positives sejam todos previstos
+        - Specificity:   
+
+- Accuracy e Precision
+    - Accuracy: A proporção de *todas* previsões que foram corretamente identificadas
+        - true positive + true negative / all 
+    - Precision: A proporção dos reais positivos que foram corretamente identificados
+        - True positives / all positives
+    - Accuracy = 1, Tomar cuidado com overfit!
+
+- ROC/AUC 
+    - ROC: É uma representação gráfica que ilustra o desempenho de um sistema classificador binário à medida que o seu limiar de discriminação varia
+    - AUC: Representa o grau ou medida de separabilidade. Quanto maior o AUC, melhor o modelo está em prever 0s como 0s e 1s como 1s
+    - Cut off point: Aumentar a Specitifity ou a Sensitivity
+        - Como colocar o cut off point? 
+        - Depende do que é mais importante para nosso modelo
+        - Utilizar a Confusion matrix, com diferentes Cut off point em cada matriz
+        - Gráfico da TPR x FPR (sensitivity e specifity)
+            - Os pontos do g´rafico formam o ROC (Receiver Operating Characteristics)
+            - Encontrar o knee point = best model with max sensitivity ou max specificity
+        - AUC: Area under the curve. Tenta maximizar a AUC do modelo 
+            - Podemos testar diferentes modelos (algotimpos) para ver qual tem a maior AUC no gráfico
+
+- Gini Impurity
+    - Calculo para cada Feature para encontrar o Gini Impurity de cada um
+        - G.I = 1 - ("prob val 1")² - ("prob val 2")² PPara cada valor da árvore de decisão
+            - (("val 1")/ (pop total)) x G.I1 + (("val 2")/ (pop total)) x G.I2
+            - Acha a média ponderada para a feature em questão
+            - Repete para todas as outras features
+            - A qual tem o menor valor, é a qual melhor decide corretamente
+                - Utilizamos essa feature para ser o nó Raiz!
+
+- F1 Score
+    - Uma alternativa para precisão do algoritmo
+    - F1 Score = Combination of recall(sensitivity) and precision
+    - F1 Score = 2/((1/recall)+(1/precision)) ou ((recall x precision)/ (Recall + Precision))x 2
+        
+        
+><h2> Ferramentas e Frameworks de Machine Learning</h2>
+
+- Jupyter Notebooks
+    - IDE
+    - Web-Based: Conecta pelo Browser
+    - Como se fosse uma Wiki para códigos
+    - Combina códigos executáveis com documentações 
+    - Usado extensivamente para ciência de dados, ML e Deep L.
+    - Suporta várias linguagens de programação, incluindo python
+    - **User/Browser <-> Jupyter Notebook Server <-> Kernel**
+    - Usuário Cria ou carrega Nootbook Files para o Jupyter Notbook server
+    - Possue células que são executáveis e retornam o valor da execução do algoritmo 
+    - Sagemaker: Serviço AWS que faz o papel do jupyter notebook
+        - Instancias de notebook totalmente gerenciadas
+        - Multiplas opções de Kernel 
+
+- ML e DL Frameworks
+    - Diferença entre Algoritmo e Framework
+        - Algoritmo: Ex: CNN            -> Calculos estruturados que levam a um resultado específico
+        - Framework: Ex: TensorFlow, Keras, MXNet, PyTorch -> Forma de utilizar algoritmos de maneira mais abstraida/facilitada para obter os resultados
+            - Ferramentas/APIs/Libriries que alguém contruiu e mantém para serem utilizadas sem precisar ter conhecimento a fundo dos algoritmos
+    - **mxnet**: Framework adotado pela AWS
+        - Muito bom para escalar na infra de cloud
+        - Gluon for mxnet: Api especification
+    - **PyTorch**: muito usado
+    - **Scikit learn**: Fácil de utilizar/iniciar e para experimentar
+    - Linguagens:
+        - **Python**
+        - **R**
+        - **Go**
+
 
 
 
@@ -341,5 +420,7 @@
 
 <h2> Anotações e links úteis </h2>
 
+
 - [⭐️ Resources ⭐](https://www.youtube.com/watch?v=9suSsTVhYuw) (Não lido ainda)
     - Links no comentário do vídeo
+- [ROC/AUC](https://medium.com/@eam.avelar/o-que-%C3%A9-auc-e-roc-nos-modelos-de-machine-learning-2e2c4112033d) (não lido ainda)
