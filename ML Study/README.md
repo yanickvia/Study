@@ -500,6 +500,46 @@
         - SageMaker Notebook 
         - SageMaker Algoritmos
     
+- Amazon Ground Truth
+    - Contruir conjunto de dados altamente precisos usando ML e reduzindo os custos de rotulação dos dados em até 70%
+    - Ajuda a rotular os dados
+    - Humanos decidem e rotulam o dado para o Modelo
+    - Amazon Mechanical Turk: Pessoas terceirizadas para fazer pequenos trabalhos para a Amazon
+
+- Preprocessing Image Data 
+    - "!aws s3 cp ..."  o ! é indicação de um comando na linha de comando (cdm)
+
+- SageMaker Algorithms
+    - SageMaker built-in algorithms
+        - BlazingText (Amazon Comprehend, maybe)
+            - word2vec/Text classification
+            - Natural language processing (NLP)
+            - Sentiment Analysis
+            - Named Entity Recognition
+            - Machine Tranlation
+        - Image Classification Alg (behimd Amazon Rekognition)
+            - Convolutional Neural Network (CNN)
+        - K-means alg
+            - Find discrete groupings within data
+        - K-nearst neighbors (k-NN) alg
+        - Latent Dirichlet Allocation (LDA) alg (Amazon Comprehend, maybe)
+            - Text Analysis
+            - Topic Discovery 
+        - Linear learner algo
+        - Object2vec Alg
+        - Principal Component Analysist (PCA) alg
+            - Reduce the dimensionality (i.e number of features)
+        - Randon Cut Forest (RCF) alg
+        - Squence-to-Sequence alg
+        - XGBoost alg
+            - eXtreme Gradient Boosting
+            - Gradient boosted tress algoriothm
+            - Use Case:
+                - Making predictions from tabular data
+        - (Documentação dos algoritmos)[https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html]
+    - AWS Marketplace
+
+
 
 
 
@@ -517,3 +557,5 @@
 - [⭐️ Resources ⭐](https://www.youtube.com/watch?v=9suSsTVhYuw) (Não lido ainda)
     - Links no comentário do vídeo
 - [ROC/AUC](https://medium.com/@eam.avelar/o-que-%C3%A9-auc-e-roc-nos-modelos-de-machine-learning-2e2c4112033d) (não lido ainda)
+
+- (Documentação dos algoritmos do SageMaker)[https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html]
