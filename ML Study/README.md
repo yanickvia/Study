@@ -339,7 +339,7 @@
         - Formula: True Positves / (true positives + False Negatives)
         - Ou seja, é a divisão dos acertos positivos do modelo, pela soma dos positivos conhecidos dos dados usados. (False negative = Deveria ter inferido como positivo, mas errou e inferiu negativo)
     - Specificity
-        - Número de negativos corretos dentro dos reaais negativos
+        - Número de negativos corretos dentro dos reais negativos
         - Formula: True Negatives/ (True negatives + False Positives)
         - Ou seja, é a divisão dos acertos negativos pela soma do total de negativos dos dados utilizados pelo modelo. (False positives = Inferiu como positivo erroneamente, pois o correto era ser negativo)
     - Comparamos os valores encontrados entre diferentes algoritmos
@@ -412,6 +412,99 @@
         - **Python**
         - **R**
         - **Go**
+
+- TensorFlow
+    - **import** tensorflow **as** tf  _(shift + Enter)_ ->carrega o tensorflow para o notebook
+        - graph = tf.get_default_graph() retorna um graph padrão
+        - graph.get_operations() pede para exibir o graph
+        - [] retorna vazio da operação anterior 
+        - .. Operações de multiplicação, adição: tf.add(), tf.multiply()
+        - with tf.Session() as sess:
+            - result = sess.run(d,feed_dict = v_for_b)
+
+- PyTorch
+    - Framework de Machine Learning com base em Python
+    - **import** torch
+    - requires_grad = True -> da pra fazer backpropagation
+
+- MXNet
+    - **import** mxnet as mx
+    - **from** mxnet **import** nd
+    - nd é parecido com um numpy array
+
+- Scikit Learn
+    - **import** sklearn
+    - **from** sklearn **import** datasets
+
+- Amazon ML
+    - Aposentado
+
+<h2> Serviços e Aplicações Amazon AI/ML (to do) </h2>
+    - Amazon Rekognition
+    - Amazon Polly
+    - Amazon Transcribe
+    - Amazon Transalate
+    - Amazon Comprehend
+    - Amazon Lex
+
+<h2> AWS SageMaker </h2>
+
+- Build, Train and Deploy ML models rapidamente
+    - É uma solução de ML End-to-End, onde você pode trabalhar com o ciclo da vida inteiro da ML
+     - Os três estágios do SageMaker
+        - Build
+            - Processing
+            - Ground Truth: Labeling
+            - Notebooks
+        - Train
+            - Algoritmos de ML prontos
+            - Ajuste por hyperparameters
+            - Notebooks
+            - Infra
+        - Dreploy 
+            - Tempo real
+            - Batch (lotes)
+            - Notebooks
+            - Infra
+            - Neo: Deploy em dispositivos discretos, como uma borda da cloud (greengrass)
+
+- Controlar o SageMaker
+    - Pelo Console
+    - Via SDK 
+        - Sagemaker SDK
+    - Jupyter Notebook
+        - Encorajado pela AWS como o principal local para se controlar o SageMaker
+
+- SageMaker Notebooks
+    - Maneira fácil de ter um jupyter notebook para rodar uns códigos
+    - Normalmente o notebook é só um local para controlar, então não precisa ser máquina potente
+    - Possui vários Kernels pronto para uso. (PyTorch, MXnet..)
+    - LifeCycle Configurations: Similar ao bootstrap das instancias EC2, ou seja, script que roda na criação da instância notebook 
+
+
+<h2> Build </h2>
+
+- Ter um bom entendimento de qual problema estamos tentando resolver
+    - Ter um objetivo em mente
+        - Coletar os dados certos, processar do jeito certo e selecionar o Algoritmo de ML apropriado, para estarmos aptos a criar nosso modelo
+
+- Pre-processamento
+    - Visualizar os dados (Matplot lab)
+    - Explorar os dados 
+    - Engenharia dos dados, nas features..
+    - Sintetizar: Ajusatar os dados, pegar mais dados que vão influenciar o modelo a inferir o que desejamos
+    - Conversão dos dados para o formato que o algoritmo escolhido aceita/performa melhor
+        - Manipulação de dados
+    - Dividir os dados: Dado de treino, validação (opcional) e treino
+    - Componentes do SageMaker
+        - SageMaker Notebook 
+        - SageMaker Algoritmos
+    
+
+
+
+
+
 
 
 
