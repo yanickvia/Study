@@ -12,6 +12,7 @@
 - Dia 05/06/2020
     >- *"The greatest successes come from having the freedom to fail"* - Mark Zuckerberg
 
+- Dia 08/06/2020
     >- "*A oportunidade sempre está nos lugares que as pessoas reclamam." - Jack Ma
 
 

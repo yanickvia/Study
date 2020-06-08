@@ -37,7 +37,9 @@
 
 > [Questões com respostas de exemplo - AWS](https://d1.awsstatic.com/training-and-certification/docs-data-analytics-specialty/AWS-Certified-Data-Analytics-Specialty_Sample-Questions.pdf) 
 
-
+> [Exames testes sobre a prova de Big Data](https://www.whizlabs.com/aws-certified-big-data-specialty/)
+    > - Usar e-mail do suporte para login
+    > - Não desanimem se for muito difícil kkk
 
 
 
