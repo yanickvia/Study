@@ -12,9 +12,14 @@
 - Dia 05/06/2020
     >- *"The greatest successes come from having the freedom to fail"* - Mark Zuckerberg
 
-- Dia 08/06/2020
+- Dia 06/06/2020
+    >- "*Sinta o medo e faça mesmo assim*" - Susan Jeffers
+
+- Dia 07/06/2020
     >- "*A oportunidade sempre está nos lugares que as pessoas reclamam." - Jack Ma
 
+- Dia 08/06/2020
+    >- "*Se você quer que seu futuro mude, você precisa mudar. Se você não mudar, os próximos seis anos da sua vida será igual os ultimos seis anos." - Jim Rohn Teacher, Mr. Shoff
 
 
 
